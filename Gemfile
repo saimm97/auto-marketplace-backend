@@ -38,6 +38,11 @@ group :development, :test do
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
+  gem 'active_record_query_trace'
+  gem 'byebug'
+  gem 'meta_request'
+
 end
 
-
+gem "devise"
+gem "pg"

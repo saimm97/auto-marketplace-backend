@@ -16,7 +16,6 @@ AllCops:
     - bin/bundle
     - Gemfile
 
-
 Bundler:
   Enabled: true
 

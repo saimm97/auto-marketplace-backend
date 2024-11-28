@@ -8,82 +8,82 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 
-# Company.create([{ name:           "Toyota Indus Motor Company",
-#                   country:        "Japan",
-#                   description:    "Toyota Indus Motor Company Limited, commonly known as Indus Motor,
-#                   is a joint venture between Toyota Motor Corporation, Japan,
-#                   and House of Habib, Pakistan.
-#                   It is one of the leading car manufacturers in Pakistan.",
-#                   established_in: "1989-12-01T00:00:00Z",
-#                   website:        "https://www.toyota-indus.com" },
-#                 {
-#                   name:           "Honda Atlas Cars Pakistan",
-#                   country:        "Japan",
-#                   description:    "Honda Atlas Cars Pakistan Limited is a joint venture between
-#                   Honda Motor Company Limited Japan
-#                   and the Atlas Group of Companies in Pakistan,
-#                   known for producing popular vehicles like Civic and City.",
-#                   established_in: "1992-11-01T00:00:00Z",
-#                   website:        "https://www.honda.com.pk"
-#                 },
-#                 {
-#                   name:           "Pak Suzuki Motor Company",
-#                   country:        "Japan",
-#                   description:    "Pak Suzuki Motor Company Limited is a subsidiary of Suzuki Motor Corporation, Japan.
-#                   It has been a major player in Pakistan's automobile industry,
-#                   producing vehicles like Alto, Cultus, and WagonR.",
-#                   established_in: "1983-09-01T00:00:00Z",
-#                   website:        "https://www.paksuzuki.com.pk"
-#                 },
-#                 {
-#                   name:           "Hyundai Nishat Motor",
-#                   country:        "South Korea",
-#                   description:    "Hyundai Nishat Motor is a collaboration between
-#                   Hyundai Motor Company and Nishat Group.
-#                   It aims to bring advanced technology
-#                   and quality vehicles to Pakistan.",
-#                   established_in: "2017-12-01T00:00:00Z",
-#                   website:        "https://www.hyundai-nishat.com"
-#                 },
-#                 {
-#                   name:           "Kia Lucky Motors",
-#                   country:        "South Korea",
-#                   description:    "Kia Lucky Motors is a joint venture between Kia Motors,
-#                   South Korea, and Lucky Cement of Pakistan.
-#                   The company has reintroduced Kia vehicles into the
-#                   Pakistani market, including Sportage and Picanto.",
-#                   established_in: "2017-12-01T00:00:00Z",
-#                   website:        "https://www.kia.com/pk"
-#                 },
-#                 {
-#                   name:           "MG Motors Pakistan",
-#                   country:        "China",
-#                   description:    "MG Motors Pakistan is a joint venture between Morris Garages (MG),
-#                   a British-origin brand owned by SAIC Motor Corporation,
-#                   and JW Auto Park of Pakistan. MG offers modern,
-#                   feature-rich SUVs like the MG HS and MG ZS EV.",
-#                   established_in: "2020-01-01T00:00:00Z",
-#                   website:        "https://www.mgmotor.com.pk"
-#                 },
-#                 {
-#                   name:           "Mercedes-Benz Pakistan",
-#                   country:        "Germany",
-#                   description:    "Mercedes-Benz Pakistan is a premium automobile brand
-#                   epresented by Shahnawaz Private Limited in the country.
-#                   The company offers luxury sedans, SUVs, and sports cars,
-#                   renowned for their advanced engineering and comfort.",
-#                   established_in: "1990-01-01T00:00:00Z",
-#                   website:        "https://www.mercedes-benz.com.pk"
-#                 },
-#                 {
-#                   name:           "BMW Pakistan",
-#                   country:        "Germany",
-#                   description:    "BMW Pakistan operates under Dewan Motors Private Limited,
-#                   delivering high-performance luxury vehicles, including sedans,
-#                   SUVs, and electric cars, that combine innovation with sophistication.",
-#                   established_in: "2004-01-01T00:00:00Z",
-#                   website:        "https://www.bmw.com.pk"
-#                 }])
+Company.create([{ name:           "Toyota Indus Motor Company",
+                  country:        "Japan",
+                  description:    "Toyota Indus Motor Company Limited, commonly known as Indus Motor,
+                  is a joint venture between Toyota Motor Corporation, Japan,
+                  and House of Habib, Pakistan.
+                  It is one of the leading car manufacturers in Pakistan.",
+                  established_in: "1989-12-01T00:00:00Z",
+                  website:        "https://www.toyota-indus.com" },
+                {
+                  name:           "Honda Atlas Cars Pakistan",
+                  country:        "Japan",
+                  description:    "Honda Atlas Cars Pakistan Limited is a joint venture between
+                  Honda Motor Company Limited Japan
+                  and the Atlas Group of Companies in Pakistan,
+                  known for producing popular vehicles like Civic and City.",
+                  established_in: "1992-11-01T00:00:00Z",
+                  website:        "https://www.honda.com.pk"
+                },
+                {
+                  name:           "Pak Suzuki Motor Company",
+                  country:        "Japan",
+                  description:    "Pak Suzuki Motor Company Limited is a subsidiary of Suzuki Motor Corporation, Japan.
+                  It has been a major player in Pakistan's automobile industry,
+                  producing vehicles like Alto, Cultus, and WagonR.",
+                  established_in: "1983-09-01T00:00:00Z",
+                  website:        "https://www.paksuzuki.com.pk"
+                },
+                {
+                  name:           "Hyundai Nishat Motor",
+                  country:        "South Korea",
+                  description:    "Hyundai Nishat Motor is a collaboration between
+                  Hyundai Motor Company and Nishat Group.
+                  It aims to bring advanced technology
+                  and quality vehicles to Pakistan.",
+                  established_in: "2017-12-01T00:00:00Z",
+                  website:        "https://www.hyundai-nishat.com"
+                },
+                {
+                  name:           "Kia Lucky Motors",
+                  country:        "South Korea",
+                  description:    "Kia Lucky Motors is a joint venture between Kia Motors,
+                  South Korea, and Lucky Cement of Pakistan.
+                  The company has reintroduced Kia vehicles into the
+                  Pakistani market, including Sportage and Picanto.",
+                  established_in: "2017-12-01T00:00:00Z",
+                  website:        "https://www.kia.com/pk"
+                },
+                {
+                  name:           "MG Motors Pakistan",
+                  country:        "China",
+                  description:    "MG Motors Pakistan is a joint venture between Morris Garages (MG),
+                  a British-origin brand owned by SAIC Motor Corporation,
+                  and JW Auto Park of Pakistan. MG offers modern,
+                  feature-rich SUVs like the MG HS and MG ZS EV.",
+                  established_in: "2020-01-01T00:00:00Z",
+                  website:        "https://www.mgmotor.com.pk"
+                },
+                {
+                  name:           "Mercedes-Benz Pakistan",
+                  country:        "Germany",
+                  description:    "Mercedes-Benz Pakistan is a premium automobile brand
+                  epresented by Shahnawaz Private Limited in the country.
+                  The company offers luxury sedans, SUVs, and sports cars,
+                  renowned for their advanced engineering and comfort.",
+                  established_in: "1990-01-01T00:00:00Z",
+                  website:        "https://www.mercedes-benz.com.pk"
+                },
+                {
+                  name:           "BMW Pakistan",
+                  country:        "Germany",
+                  description:    "BMW Pakistan operates under Dewan Motors Private Limited,
+                  delivering high-performance luxury vehicles, including sedans,
+                  SUVs, and electric cars, that combine innovation with sophistication.",
+                  established_in: "2004-01-01T00:00:00Z",
+                  website:        "https://www.bmw.com.pk"
+                }])
 
 Vehicle.create(
   [

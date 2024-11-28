@@ -10,9 +10,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2024_11_08_135219) do
+ActiveRecord::Schema[7.2].define(version: 2024_11_28_090024) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  # Custom types defined in this database.
+  # Note that some types may not work with other database engines. Be careful if changing database.
+  create_enum "category", ["Sedan", "SUV", "hatchback", "Convertible", "Coupe", "Crossover"]
+  create_enum "fuel_type", ["Petrol", "Diesel", "CNG", "None"]
+  create_enum "transmission", ["Manual", "Automatic", "CVT", "EV", "Triptonic", "AMT", "DCT", "Hybrid", "Hybrid-EV"]
+  create_enum "type", ["Car", "Motorcycle", "Jeep", "Truck", "Bus", "Wagon"]
+
+  create_table "companies", force: :cascade do |t|
+    t.string "name"
+    t.string "country"
+    t.text "description"
+    t.datetime "established_in"
+    t.string "website"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "test_tables", force: :cascade do |t|
     t.string "email", null: false
@@ -45,5 +62,24 @@ ActiveRecord::Schema[7.2].define(version: 2024_11_08_135219) do
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["jti"], name: "index_users_on_jti", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+  end
+
+  create_table "vehicles", force: :cascade do |t|
+    t.string "name", null: false
+    t.string "model", null: false
+    t.string "color", null: false
+    t.bigint "company_id", null: false
+    t.datetime "registration_date", null: false
+    t.datetime "registration_place", null: false
+    t.json "images"
+    t.string "engine", null: false
+    t.enum "type", null: false, enum_type: "type"
+    t.enum "category", null: false, enum_type: "category"
+    t.enum "transmission", null: false, enum_type: "transmission"
+    t.integer "seats", null: false
+    t.enum "fuel_type", null: false, enum_type: "fuel_type"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["company_id"], name: "index_vehicles_on_company_id"
   end
 end

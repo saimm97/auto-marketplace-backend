@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2024_11_28_090024) do
+ActiveRecord::Schema[7.2].define(version: 2024_11_28_113030) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -20,6 +20,7 @@ ActiveRecord::Schema[7.2].define(version: 2024_11_28_090024) do
   create_enum "fuel_type", ["Petrol", "Diesel", "CNG", "None"]
   create_enum "transmission", ["Manual", "Automatic", "CVT", "EV", "Triptonic", "AMT", "DCT", "Hybrid", "Hybrid-EV"]
   create_enum "type", ["Car", "Motorcycle", "Jeep", "Truck", "Bus", "Wagon"]
+  create_enum "vehcile_type", ["Car", "Motorcycle", "Jeep", "Truck", "Bus", "Wagon"]
 
   create_table "companies", force: :cascade do |t|
     t.string "name"
@@ -70,16 +71,16 @@ ActiveRecord::Schema[7.2].define(version: 2024_11_28_090024) do
     t.string "color", null: false
     t.bigint "company_id", null: false
     t.datetime "registration_date", null: false
-    t.datetime "registration_place", null: false
     t.json "images"
     t.string "engine", null: false
-    t.enum "type", null: false, enum_type: "type"
     t.enum "category", null: false, enum_type: "category"
     t.enum "transmission", null: false, enum_type: "transmission"
     t.integer "seats", null: false
     t.enum "fuel_type", null: false, enum_type: "fuel_type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.enum "vehicle_type", enum_type: "vehcile_type"
+    t.string "registration_place"
     t.index ["company_id"], name: "index_vehicles_on_company_id"
   end
 end
